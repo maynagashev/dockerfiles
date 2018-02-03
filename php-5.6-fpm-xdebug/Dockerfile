@@ -44,7 +44,7 @@ RUN if [ ${INSTALL_PHPREDIS} = true ]; then \
 # MongoDB (new driver): http://fi2.php.net/manual/en/set.mongodb.php
 #####################################
 
-ARG INSTALL_MONGODB=false
+ARG INSTALL_MONGODB=true
 RUN if [ ${INSTALL_MONGODB} = true ]; then \
     # Install the mongodb extension
     pecl install mongodb && \
